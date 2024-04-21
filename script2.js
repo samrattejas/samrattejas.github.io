@@ -19,7 +19,7 @@
 		const multipleSelectionBox5 = document.getElementById("multipleSelectionBox5");
     
 
-      const generatedText = document.getElementById("generatedText");
+      const generatedText2 = document.getElementById("generatedText2");
       const patientName = document.getElementById("patientName");
 
       doneBtn.addEventListener("click", function () {
