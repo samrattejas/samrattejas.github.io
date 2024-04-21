@@ -74,6 +74,154 @@
     <section id="section3">
         <h2>Section 3</h2>
         <!-- Add your HTML code for Section 3 here -->
+        <html>
+  <head>
+	  <style>
+      #generatedText {
+	  width: auto-flow;
+        height: 1000px;
+        min-height: 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 10px;
+	    color: blue;
+        overflow-y: scroll;
+  }
+		#multipleSelectionBox {
+	  width: auto-flow;
+        height: 120px;
+			min-height: 30px; }
+  select {
+       
+        height: 80px;
+        font-size: 12px;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+		#numberSelection {
+        width: 100px;
+      }
+		#dateSelection {
+        width: 150px;
+      }
+		#numberSelection2 {
+        width: 100px;
+      } select[multiple] {
+    overflow: auto;
+    height: 120px;
+  }
+		p {
+        font-size: 12px;
+        text-align: auto;
+      }
+</style>
+	
+    <title>Skilled PT Eval Form</title>
+  </head>
+  <body>
+    <h5>PT EVAL</h5>
+    <p>PATIENT NAME: <input type="text" id="patientName"></p>
+    <p>SELECT AGE: <input type="number" id="numberSelection" min="50" max="100" value="65"> GENDER  <select id="dropdown2">
+      <option value="MALE">MALE</option>
+      <option value="FEMALE">FEMALE</option>
+    </select>ASSISTIVE DEVICES <select id="multipleSelectionBox2" multiple>
+      <option value="CANE">CANE</option>
+      <option value="STANDARD WALKER" selected>WALKER</option>
+      <option value="2 WHEELED WALKER">2-WHEEL WALKER</option>
+      <option value="ROLLING WALKER">ROLLING WALKER</option>
+      <option value="WHEELCHAIR">WHEELCHAIR</option>
+      <option value="SHOWER CHAIR">SHOWER CHAIR</option>
+      <option value="OXYGEN MACHINE">OXYGEN MACHINE</option>
+      <option value="HOSPITAL BED">HOSPITAL BED</option>
+      <option value="RAISED TOILET SEAT">RAISED TOILET SEAT</option>
+    </select></p>
+	  
+	    </select>High Risk medication <select id="multipleSelectionBox5" multiple>
+     
+	<option value="Opioids">Opioids</option>
+  <option value="Anticoagulants">Anticoagulants</option>
+  <option value="Hyperglycemic">Hyperglycemic</option>
+  
+    </select></p>
+
+ </select>Other Evals needed <select id="multipleSelectionBox4" multiple>
+      <option value="RN">RN</option>
+      <option value="OT" >OT</option>
+      <option value="ST">ST</option>
+      <option value="MSW">MSW</option>
+      
+    </select></p>
+    <p>PATIENT  <select id="dropdown">
+      <option value="HENRY FORD HOSPITAL">HENRY FORD</option>
+      <option value="BEAUMONT HOSPITAL">BEAUMONT HOSPITAL</option>
+      <option value="Ascension HOSPITAL">Ascension</option>
+      <option value="U OF M HOSPITAL">U OF M</option>
+      <option value="MCLAREN">Maclaren</option>
+      <option value="SKILLED NURSING FACILITY">SNF</option>
+      <option value="REFERRED BY PHYSICIAN.">REFERRED BY PHYSICIAN</option>
+    </select> AND DISCHARGED TO HOME ON <input type="date" id="dateSelection"></p>
+    <p>PMH INCLUDES <select id="multipleSelectionBox" multiple> <option value="HTN"selected>HTN</option>
+      <option value="DM2"selected>DM2</option>
+      <option value="CVA">CVA</option>
+      <option value="CHF">CHF</option>
+      <option value="CKD">CKD</option>
+      <option value="DJD">DJD</option>
+      <option value="COPD">COPD</option>
+      <option value="Pneumonia">Pneumonia</option>
+      <option value="Parkinsons Disease">Parkinsons</option>
+      <option value="and H/O FALLS"selected>FALLS</option>
+
+	
+    </select>STRENGTH  <select id="dropdown3">
+      <option value="(GROSS MUSCLE STRENGTH IN RIGHT HIP 3/5  LEFT HIP 3/5 IN RIGHT KNEE  3/5  LEFT KNEE 3/5 IN RIGHT ANKLE 4/5 LEFT ANKLE 4/5).">AVERAGE 3/5</option>
+      <option value="(GROSS MUSCLE STRENGTH IN RIGHT HIP 3+/5  LEFT HIP 3+/5 IN RIGHT KNEE  3+/5  LEFT KNEE 3+/5 IN RIGHT ANKLE 4/5 LEFT ANKLE 4/5)." selected>AVERAGE 3+/5</option>
+    </select> 30 SEC CHAIR TEST <select id="dropdown4">
+      <option value="AGE 60-64: MALE <14 : FEMALE < 12.">AGE 60-64</option>
+      <option value="AGE 65-69 MALE <12 : FEMALE < 11">AGE 65-69</option>
+      <option value="AGE 70-74: MALE <14 : FEMALE < 12." selected>AGE 70-74</option>
+      <option value="AGE 75-79 MALE <12 : FEMALE < 11">AGE 75-79</option>
+      <option value="AGE 80-84: MALE <14 : FEMALE < 12.">AGE 80-84</option>
+      <option value="AGE 85-89 MALE <12 : FEMALE < 11">AGE 85-89</option>
+    </select></p> 
+    <p>TINNETI BALANCE<select id="dropdown5">
+      <option value="8/16">8/16</option>
+      <option value="9/16">9/16</option>
+      <option value="10/16" selected>10/16 </option>
+      <option value="11/16">11/16</option>
+      <option value="12/16">12/16</option>
+      <option value="13/16">13/16</option></select> 
+      TINNETI GAIT<select id="dropdown6">
+      <option value="6/12">6/12</option>
+      <option value="7/12">7/12</option>
+      <option value="8/12"selected>8/12</option>
+      <option value="9/12">9/12</option>
+      <option value="10/12">10/12</option></select>TUG: <input type="number" id="numberSelection2" min="20" max="90" value="35"></p>
+    <p>LIVING SITUATION<select id="dropdown7">
+      <option value="1-story home with 2 steps to enter, The entry has R sided rails. The patient's residence does have a basement, HOWEVER PATIENT DOES NOT GO THERE. The patient's bedroom is located on the main floor and the full bathroom including shower and tub WHICH is ALSO located on the main floor."selected>1 STORY, BASEMENT</option>
+      <option value="1-story home with 2 steps to enter, The entry has R sided rails. The patient's residence does NOT have a basement. The patient's bedroom is located on the main floor and the full bathroom including shower and tub is ALSO located on the main floor.">1 STORY, NO BASEMENT</option>
+      <option value="2-story home with 2 steps to enter, and with 12 steps to the second floor. The entry has R sided rails. The patient's residence does have a basement. The patient's bedroom is located on the MAIN floor and the full bathroom including shower and tub located on the MAIN floor.">2 STORY, BEDROOM MAIN FLOOR</option>
+      <option value="2-story home with 2 steps to enter, and with 12 steps to the second floor. The entry has R sided rails. The patient's residence does have a basement. The patient's bedroom is located on the SECOND floor and the full bathroom including shower and tub is located on the SECOND floor.">2 STORY, BEDROOM MAIN FLOOR</option>
+      <option value="ASSISTED LIVING FACILITY">ASSISTED LIVING</option>
+      <option value="INDEPENDENT RETIREMENT FACILITY">INDEPENDENT RETIREMENT</option>
+      <option value="1-story GROUP home with 2 steps to enter, The entry has R sided rails. The patient's residence does have a basement, HOWEVER PATIENT DOES NOT GO THERE. The patient's bedroom is located on the main floor and the patient's full bathroom including shower and tub WHICH is ALSO located on the main floor.">GROUP HOME</option>
+    </select> LIVES WITH A  <select id="multipleSelectionBox3" multiple>
+      <option value="SPOUSE">SPOUSE</option>
+      <option value="DAUGHTER"selected>DAUGHTER</option>
+      <option value="SON">SON</option>
+      <option value="FATHER">FATHER</option>
+      <option value="MOTHER">MOTHER</option>
+      <option value="FRIEND">FRIEND</option>
+      <option value="CAREGIVER">CAREGIVER</option>
+    </select></p>
+    <button id="doneBtn">DONE</button>
+    <button id="clearBtn">CLEAR</button>
+    <button id="copyBtn">COPY</button>
+    <textarea id="generatedText" readonly></textarea>
+       <script src="script2.js"></script>
+</body>
+</html>
+
     </section>
 
     <section id="section4">
