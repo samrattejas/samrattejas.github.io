@@ -1,3 +1,9 @@
+function updateText(dropdownId, textId) {
+    var dropdown = document.getElementById(dropdownId);
+    var text = dropdown.options[dropdown.selectedIndex].value;
+    document.getElementById(textId).innerText = text;
+}
+
 function copyToClipboard(element) {
     var text = document.querySelector(element).innerText;
     var elem = document.createElement("textarea");
