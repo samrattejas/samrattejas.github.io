@@ -76,6 +76,36 @@
     <section id="section2">
         <h2>Section 2</h2>
         <!-- Add your HTML code for Section 2 here -->
+        <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p.generated-text {
+            font-size: 12px;
+            font-weight: bold;
+            color: green;
+            text-transform: uppercase;
+        }
+        button.copy-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h6>PRIOR LEVEL OF FUNCTION</h6>
+    <select id="dropdown-1" class="dropdown" onchange="updateText('dropdown-1', 'text1')">
+        <option value="Independent with basic activities including household mobility, transfers, grooming, bathing, laundry, shopping, transportation." selected>Independent</option>
+        <option value="Needed minimal to moderate assistance with transfers, bathing, laundry. Required maximum assistance with household mobility, shopping, transportation.">SBA to Max Assistance</option>
+        <option value="Was dependent with all activities including household mobility, transfers, bathing, laundry, shopping, and transportation.">Dependent</option>
+    </select>
+    <p class="generated-text" id="text1">Independent with basic activities including household mobility, transfers, grooming, bathing, laundry, shopping, transportation.</p>
+    <button class="copy-button" onclick="copyToClipboard('#text1')">Copy to Clipboard</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
     </section>
 
     <section id="section3">
